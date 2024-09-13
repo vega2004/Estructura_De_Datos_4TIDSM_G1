@@ -2,7 +2,10 @@ package edu.mx.uttt.recursividad;
 import javax.swing.JOptionPane;
 public class PruebaOperaciones {
     public static void main(String[] args) {
-        ejecutar();
+        //ejecutar();
+        Operaciones ope1 = new Operaciones();
+        ope1.setN(3);
+        ope1.imprimirNumeroRecursivo(ope1.getN());
     }
 
     public static String menu(){

@@ -16,6 +16,22 @@ public class Operaciones {
 
         this.n = (n>0) ? n:1;
     }
+    public void imprimirNumeroIterativa(){
+        int i = 1;
+        do{
+            System.out.println(i);
+            i++;
+        }while(i<=this.n);
+    }
+
+    public void imprimirNumeroRecursivo(int n) {
+        if(n == 1){
+            System.out.println(n);
+        } else {
+            System.out.println(n);
+            imprimirNumeroRecursivo(n - 1);
+        }
+    }
 
     public void imprimir(){
         int i = 1;
